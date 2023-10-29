@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favico/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="web/dist/output.css" rel="stylesheet">
+    <link href="web/src/styles.css" rel="stylesheet">
+    <title>Rocketflix</title>
+  </head>
+  <body class="min-h-screen bg-no-repeat bg-cover bg-gradient-rocketflix flex justify-center">
+
+    <main class="w-1/2 p-14 flex flex-col gap-8 max-md:px-0 max-sm:w-2/3">
+
+      <section class="flex flex-col items-center gap-3">
+        <img class="w-20 h-16" src="favico/android-chrome-512x512.png" alt="Logo Rocketflix">
+        <h1 class="text-cor-textos text-4xl font-bold text-center">Não sabe o que assistir?</h1>
+      </section>
+
+
+      <section id="section-infos-filme" class="hidden items-center gap-8 max-lg:flex-col">
+        <img class="capa-filme w-44 rounded" src="" alt="Capa Filme Atual">
+
+        <div>
+          <h3 class="titulo-filme text-cor-textos font-bold text-xl max-lg:text-center max-lg:mt-4"></h3>
+          <p class="descricao-filme text-cor-textos text-base text-justify mt-5"></p>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center gap-4">
+        <a id="btn-encontra-filme" class="py-3 px-4 bg-cor-btn rounded flex items-center gap-4 cursor-pointer border-2 border-solid border-[#1A1A1A] hover:bg-gray-300 active:bg-red-300">
+          <img class="w-[35px] h-[25px]" src="favico/android-chrome-192x192.png" alt="Logo Rocketflix">
+          <p class="text-black font-bold text-center text-sm">Encontrar filme</p>
+        </a>
+        <p class="w-2/3 text-cor-textos text-center font-thin max-lg:w-full text-sm">Clique em "Encontrar filme" que traremos informações de algum filme para você assistir hoje.</p>
+      </section>
+      
+    </main>
+
+    <script type="module" src="./web/main.js"></script>
+  </body>
+</html>
